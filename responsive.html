@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <img src="assets/images/logo3.jpg" class="logo" >
+            <div class="content">
+                <h1>Add plants to your living space</h1>
+                <p>Plants are an inexpense means to accessorizing your space and adding color and texture</p>
+                <button type="button">Learn More</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="slider">
+                <img src="assets/images/1first.jpg" alt="" id="slide">
+            </div>
+            <div class="slider-content">
+                <h2>Where can i find ideas for small rooms?</h2>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur atque commodi debitis, necessitatibus ex animi illum iusto nihil eligendi dolor nam tempora? Aut quos rerum ipsam, delectus architecto id enim.</p>
+                <div class="controller">
+                    <img src="assets/images/1second.jpg" alt="" id="backbtn">
+                    <div class="vertical-line"></div>
+                    <img src="assets/images/2first.jpg" alt="" id="nextbtn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slide = document.getElementById("slide");
+        var backBtn = document.getElementById("backbtn");
+        var nextBtn = document.getElementById("nextbtn");
+
+        var slideimages = new Array(
+            "assets/images/1second.jpg",
+            "assets/images/2second.jpg",
+            "assets/images/3second.jpg"
+        );
+        let i=0;
+        nextBtn.onclick = function(){
+            if(i<3){
+            slide.src=slideimages[i+1];
+            i++;
+            }
+        }
+        backBtn.onclick = function(){
+            if(i>0){
+            slide.src=slideimages[i-1];
+            i--;
+            }
+        }
+    </script>
+</body>
+</html>

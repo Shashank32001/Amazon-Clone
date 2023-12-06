@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    height: 80px;
+    background-color: orange ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    background-image: url(../images/logo3.jpg) ;
+    background-size: cover;
+    width: 85px;
+    height: 50px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid rgb(255, 160, 160);
+
+}
+.one{
+    color: blueviolet;
+}
+.content{
+    background-image: url(../images/pexels-szymon-shields-6015064.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.content p{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    background-color: rgb(156, 61, 61);
+    height: 150px;
+    padding: 45px 35px;
+    box-sizing: border-box;
+    opacity: 0.5;
+}
